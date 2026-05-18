@@ -3,333 +3,445 @@
 % Mechanical Engineering Lecturer | Thermofluids · Porous Media · Microfluidics
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt, a4paper]{article}
-
-% --- Packages ---
-\usepackage[top=2cm, bottom=2cm, left=2.2cm, right=2.2cm]{geometry}
-\usepackage{array, booktabs, tabularx, longtable}
+\documentclass[11pt,a4paper]{article}
+\usepackage[top=1.8cm,bottom=1.8cm,left=2cm,right=2cm]{geometry}
 \usepackage{enumitem}
-\usepackage{hyperref}
-\usepackage{xcolor}
 \usepackage{titlesec}
+\usepackage{hyperref}
 \usepackage{parskip}
-\usepackage{fontawesome5}
-\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{booktabs}
+\usepackage{longtable}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{microtype}
 
-% --- Colours ---
-\definecolor{accentblue}{RGB}{0, 70, 130}
-\definecolor{lightgray}{RGB}{245,245,245}
-\definecolor{darkgray}{RGB}{80,80,80}
+\definecolor{accent}{RGB}{0,70,127}
 
-% --- Hyperlink setup ---
 \hypersetup{
-    colorlinks=true,
-    urlcolor=accentblue,
-    linkcolor=accentblue
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
 }
 
-% --- Section formatting ---
-\titleformat{\section}
-  {\large\bfseries\color{accentblue}}
-  {}{0em}{}
-  [\color{accentblue}\titlerule]
-\titlespacing{\section}{0pt}{14pt}{6pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
 
-% --- Custom commands ---
-\newcommand{\cventry}[4]{%
-  \noindent\textbf{#1} \hfill \textit{\small #2}\\
-  \textit{\small #3} \hfill \textit{\small #4}\\[2pt]
-}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\color{gray}
+  Hamza Abbas $\cdot$ CV $\cdot$ Page \thepage\ of \pageref{LastPage}}
 
-\newcommand{\cventrynodates}[2]{%
-  \noindent\textbf{#1}\\
-  \textit{\small #2}\\[2pt]
-}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=2pt}
 
-\setlength{\parindent}{0pt}
-
-%----------------------------------------------------------------------------------------
+%========================================================================================
 \begin{document}
-%----------------------------------------------------------------------------------------
+%========================================================================================
 
 %--- HEADER ---
 \begin{center}
-  {\LARGE \textbf{Hamza Abbas}}\\[4pt]
-  {\large Mechanical Engineering Lecturer}\\[4pt]
-  \small
-  \faEnvelope\ \href{mailto:hamzaabbas0133@gmail.com}{hamzaabbas0133@gmail.com} \quad
-  \faGlobe\ \href{https://github.com/hamzaabbas0133-dot}{github.com/hamzaabbas0133-dot} \quad
-  \faLinkedin\ \href{https://www.linkedin.com/in/hamzaabbas0133}{LinkedIn}\\[2pt]
-  \textit{Specialisation: Thermofluids · Porous Media · Microfluidics}
+  {\LARGE\bfseries\color{accent} Hamza Abbas}\\[4pt]
+  Lecturer, Faculty of Mechanical Engineering $\cdot$ GIK Institute, Topi, KPK,
+  Pakistan\\[3pt]
+  \href{mailto:hamza.abbas0133@gmail.com}{hamza.abbas0133@gmail.com}
+  \quad$|$\quad +92\,348\,0555875
+  \quad$|$\quad
+  \href{https://linkedin.com/in/hamza-abbas1}{linkedin.com/in/hamza-abbas1}
 \end{center}
 
+%--- PROFILE ---
+\section{Profile}
+
+Mechanical engineer and lecturer with experience in thermal-fluid sciences, heat
+transfer, fluid mechanics, and numerical modelling. My academic and project work
+combines transport analysis, simulation, and experimental validation across
+porous-media, microfluidic, and energy-system applications. I use COMSOL
+Multiphysics for flow and heat-transfer modelling, and Aspen Plus for
+thermodynamic cycle simulation. My MS thesis focused on fluid transport in
+heterogeneous porous assemblies, where I derived and experimentally validated a
+modified Lucas--Washburn equation with below 8\% error. I am particularly
+interested in doctoral research involving heat transfer, turbulent flows, numerical
+optimisation, and thermofluid system design.
+
+%--- WORK EXPERIENCE ---
+\section{Work Experience}
+
+\textbf{University Lecturer} -- GIK Institute, Faculty of Mechanical Engineering
+\hfill \textit{Sep 2024 -- Present}\\
+\textit{Topi, Pakistan}
+\begin{itemize}
+  \item Teach HVAC, Engineering Dynamics, and CAD/CAM Lab to undergraduate
+        students; conduct Thermofluids-I lab sessions and manage the Fluid
+        Mechanics Laboratory.
+  \item Serve as LMS Coordinator and support Outcome-Based Education mapping for
+        courses aligned with Washington Accord standards.
+  \item Supported institutional accreditation preparation through lab
+        documentation, alumni surveys, and employer feedback.
+  \item Organised the 6th International Workshop on Functional Reverse Engineering
+        of Machine Tools (WRE~2024), including logistics and coordination.
+\end{itemize}
+
 \vspace{4pt}
+\textbf{Graduate Research Assistant} -- Biofuels \& Microfluidics Lab, GIK
+Institute \hfill \textit{Feb 2022 -- May 2024}\\
+\textit{Topi, Pakistan}
+\begin{itemize}
+  \item Used COMSOL Multiphysics to model flow behaviour, porous-media transport,
+        electric fields, and heat transfer in microfluidic and porous structures.
+  \item Derived a modified Lucas--Washburn equation for wetting-front propagation
+        in heterogeneous porous assemblies and validated it experimentally to
+        below 8\% error.
+  \item Investigated capillary flow dynamics in paper-based multilayer systems as
+        a function of substrate thickness, contact area, and fluid volume.
+  \item Fabricated paper-based and digital microfluidic devices using CO$_2$ laser
+        micromachining, photolithographic electrode patterning on PET, and thermal
+        lamination.
+  \item Used ImageJ for experimental image analysis and OriginPro for curve
+        fitting and data analysis.
+  \item Supported Thermo-Fluid Lab~1, Heat Transfer, Measurement \&
+        Instrumentation, and Micro \& Nano Fabrication courses.
+\end{itemize}
 
-%--- RESEARCH PROFILE ---
-\section{Research Profile}
+\vspace{4pt}
+\textbf{Project Research Assistant} -- HEC Project TTSF-74, GIK Institute
+\hfill \textit{Feb 2022 -- Feb 2024}\\
+\textit{Topi, Pakistan}
+\begin{itemize}
+  \item Contributed to an HEC-funded project developing a flexible
+        time-temperature indicator for food quality control and supported early
+        business-model development for the spin-off startup ``Flow Time.''
+\end{itemize}
 
-Mechanical engineering researcher and lecturer with an MS in thermofluids, specialising in three
-interconnected areas: (1)~\textbf{industrial process simulation} of waste-heat recovery systems,
-(2)~\textbf{porous media and capillary flow} modelling, and (3)~\textbf{microfluidics fabrication
-and diagnostics}. Experienced in both theoretical modelling and hands-on experimental work, with
-manuscripts under review at \textit{Langmuir} and the \textit{Journal of Fluid Mechanics}.
+\vspace{4pt}
+\textbf{Mechanical Engineering Intern} -- DG Khan Cement Company Limited
+\hfill \textit{Aug 2020 -- Sep 2020}\\
+\textit{Chakwal, Pakistan}
+\begin{itemize}
+  \item Studied plant schematics, joined maintenance crews, and gained hands-on
+        exposure to heavy industrial machinery in a cement manufacturing facility.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Mechanical Engineering Intern} -- KKB Engineering
+\hfill \textit{Mar 2020 -- Apr 2020}\\
+\textit{Chakwal, Pakistan}
+\begin{itemize}
+  \item Observed maintenance of a limestone crusher, raw mill, and kiln; spent
+        time in the quality control department.
+\end{itemize}
 
 %--- EDUCATION ---
 \section{Education}
 
-\cventry{Master of Science — Mechanical Engineering}{[Start Year]–[End Year]}
-{[University Name], [City, Country]}{}
-\begin{itemize}[leftmargin=1.4em, itemsep=1pt, topsep=2pt]
-  \item Specialisation: Thermofluids, Porous Media, and Microfluidics
-  \item Thesis: \textit{Modified Lucas-Washburn Model for Capillary Wicking in Engineered Porous Media}
-  \item Achieved $<$8\% prediction error across varied pore geometries and fluid viscosities
-  \item Manuscripts submitted to \textit{Langmuir} and \textit{Journal of Fluid Mechanics}
+\textbf{M.S. in Mechanical Engineering} -- Thermofluid Specialisation, GIK
+Institute \hfill \textit{Feb 2022 -- Jun 2024}\\
+\textit{Topi, Pakistan}
+\begin{itemize}
+  \item GPA: 3.67/4.00. Awarded Merit-Based Graduate Scholarship and Research
+        Assistantship (GA-1).
+  \item Thesis: \textit{Dynamics of Fluid Flow Between Two Porous Membranes.}
+        Derived and experimentally validated a modified Lucas--Washburn equation
+        for stratified porous assemblies with dissimilar permeabilities.
+  \item Relevant coursework: Intermediate Fluid Mechanics (A), Mass/Momentum/Energy
+        Transport (A-), Energy Management \& Auditing (A), Microfluidic Systems
+        (A-), Advanced Stress Analysis (B), Elements of Vibration \& Feedback
+        Control (B+).
 \end{itemize}
 
-\vspace{6pt}
-
-\cventry{Bachelor of Science — Mechanical Engineering}{[Start Year]–[End Year]}
-{[University Name], [City, Country]}{}
-\begin{itemize}[leftmargin=1.4em, itemsep=1pt, topsep=2pt]
-  \item [Add relevant honours, GPA, or thesis title here]
+\vspace{4pt}
+\textbf{B.S. in Mechanical Engineering} -- GIK Institute
+\hfill \textit{Aug 2017 -- Jul 2021}\\
+\textit{Topi, Pakistan}
+\begin{itemize}
+  \item Senior Design Project: designed and simulated an integrated ORC+VARS
+        waste heat recovery system for DG Khan Cement using Aspen Plus with
+        Peng--Robinson EOS; achieved 17.9\% combined efficiency and 8.7\,MW net
+        output using n-Hexane as the working fluid.
 \end{itemize}
 
-%--- ACADEMIC POSITIONS ---
-\section{Academic Positions}
+%--- RESEARCH & INDUSTRIAL PROJECTS ---
+\section{Research \& Industrial Projects}
 
-\cventry{Lecturer — Mechanical Engineering}{[Start Year]–Present}
-{[Institution Name], [City, Country]}{}
-\begin{itemize}[leftmargin=1.4em, itemsep=1pt, topsep=2pt]
-  \item Teach undergraduate and postgraduate courses in thermodynamics, fluid mechanics,
-        heat transfer, and engineering design
-  \item Supervise final-year research projects in thermofluid systems and microfluidics
-  \item Conduct independent research in porous media flow and microfluidic device fabrication
-        alongside full teaching responsibilities
-  \item [Add any awards, course developments, or student outcomes here]
-\end{itemize}
+\textbf{Industrial Water Heating System -- Pakistan Tobacco Company}
+\hfill \textit{May 2025 -- Present}\\
+Leading the design of a large-scale water heating system integrated with solar PV.
+Full technical specification and cost report in progress.
 
-%--- RESEARCH EXPERIENCE ---
-\section{Research Experience}
+\vspace{4pt}
+\textbf{ORC Feasibility Study -- Low-Temperature Industrial Heat Source}
+\hfill \textit{Feb -- Mar 2025}\\
+Assessed the techno-economic viability of an Organic Rankine Cycle on a low-grade
+industrial waste heat stream, including working fluid selection, cycle layout, and
+economic payback.
 
-\noindent\textbf{Pillar 1 — Industrial Process Simulation: Waste-Heat Recovery Systems}
-\begin{itemize}[leftmargin=1.4em, itemsep=1pt, topsep=3pt]
-  \item Modelled an integrated ORC + VARS (Organic Rankine Cycle + Vapour Absorption
-        Refrigeration System) for waste-heat recovery in a cement plant using Aspen Plus
-  \item Achieved a combined system efficiency of \textbf{17.9\%}, demonstrating significant
-        industrial energy recovery potential
-  \item Optimised working fluid selection, heat exchanger sizing, and operating conditions
-        through parametric simulation studies
-\end{itemize}
+\vspace{4pt}
+\textbf{ORC+VARS Waste Heat Recovery -- DG Khan Cement}
+\hfill \textit{Sep 2020 -- Jul 2021}\\
+Modelled an integrated ORC+VARS system in Aspen Plus for kiln waste heat
+recovery. Final design: 8.7\,MW net output and 17.9\% combined efficiency.
 
-\vspace{6pt}
-
-\noindent\textbf{Pillar 2 — Porous Media \& Capillary Flow Modelling}
-\begin{itemize}[leftmargin=1.4em, itemsep=1pt, topsep=3pt]
-  \item Developed a modified Lucas-Washburn equation incorporating dynamic contact angle
-        correction and inertial resistance to predict spontaneous wicking in engineered
-        porous substrates
-  \item Validated the model experimentally across a range of pore geometries and fluid
-        viscosities, achieving $<$8\% prediction error
-  \item Manuscripts currently under review: \textit{Langmuir} (ACS) and
-        \textit{Journal of Fluid Mechanics} (Cambridge University Press)
-\end{itemize}
-
-\vspace{6pt}
-
-\noindent\textbf{Pillar 3 — Microfluidics Fabrication \& Diagnostics}
-\begin{itemize}[leftmargin=1.4em, itemsep=1pt, topsep=3pt]
-  \item Hands-on experience with \textbf{CO$_2$ laser micromachining},
-        \textbf{photolithography}, and \textbf{EWOD} (electrowetting-on-dielectric)
-        platform fabrication
-  \item Developed paper-based microfluidic diagnostic devices leveraging capillary-driven flow
-  \item Designed and characterised microchannels for controlled flow experiments in support
-        of capillary flow model validation
-\end{itemize}
+\vspace{4pt}
+\textbf{Packed-Bed Latent Heat Storage -- COMSOL Simulation}
+\hfill \textit{Feb -- Jun 2020}\\
+Simulated transient thermal behaviour in a packed-bed PCM storage tank using
+COMSOL Multiphysics.
 
 %--- PUBLICATIONS ---
-\section{Publications \& Manuscripts}
+\section{Publications}
 
-\begin{enumerate}[leftmargin=1.6em, itemsep=4pt]
+\textit{Journal Articles -- Under Review}
+\begin{itemize}
+  \item Ali, M.; Jafry, A.T.; \textbf{Abbas, H.}; Lee, M.; Abbasi, M.S.; Shah,
+        S.F.; Ajab, H. ``Revealing the Mechanics of Highly Resistive Fluid Flow in
+        a Leaf Architecture using Paper Microfluidics.''
+        \textbf{\textit{Journal of Fluid Mechanics}} (Cambridge), under review,
+        2025.
+  \item \textbf{Abbas, H.}; Jafry, A.T.; Ali, M.; Ajab, H.; Cheema, T.A.
+        ``Impact of paper thickness, contact area, and fluid volume on flow
+        dynamics in paper-based microfluidics.''
+        \textbf{\textit{Langmuir}} (ACS), under review, 2025.
+\end{itemize}
 
-  \item \textbf{Abbas, H.}, [Co-authors]. \textit{Modified Lucas-Washburn Equation for
-        Capillary Wicking in Engineered Porous Media.}
-        \textit{Langmuir} (ACS) — \textbf{Under Review}, [Year].
-
-  \item \textbf{Abbas, H.}, [Co-authors]. \textit{[JFM Manuscript Title — add here].}
-        \textit{Journal of Fluid Mechanics} — \textbf{Under Review}, [Year].
-
-  \item \textbf{Abbas, H.}, [Co-authors]. \textit{[ORC/Aspen Plus publication title
-        if published/submitted — add here].}
-        [Journal Name], [Year].
-
-\end{enumerate}
+\vspace{4pt}
+\textit{Conference Proceedings}
+\begin{itemize}
+  \item \textbf{Abbas, H.}; Ali, M.; Ullah, H.; Jafry, A.T. ``Actuation and Flow
+        Control in Paper-Based Microfluidics by Varying Thickness of Storage
+        Reservoir.'' \textbf{\textit{MATEC Web of Conferences}}, 2023.
+  \item \textbf{Abbas, H.}; Ali, M.; Naeem, N.; Ullah, H.; Jafry, A.T. ``Effect
+        of Storage Reservoir on Fluid Velocity in Lateral Flow Paper Device.''
+        \textbf{\textit{Engineering Proceedings}} (MDPI), 2023.
+  \item Ullah, H.; \textbf{Abbas, H.}; et al. ``Droplet Actuation Enhancement
+        through Voltage Control and Hydrophobic Coating Selection.''
+        \textbf{\textit{MATEC Web of Conferences}}, 2024.
+\end{itemize}
 
 %--- TECHNICAL SKILLS ---
 \section{Technical Skills}
 
-\begin{tabularx}{\textwidth}{@{} l X @{}}
-\toprule
-\textbf{Category} & \textbf{Details} \\
-\midrule
-Process Simulation    & Aspen Plus (ORC, VARS, heat integration) \\
-Analytical Modelling  & Lucas-Washburn equation, capillary pressure models,
-                        porous media transport \\
-Fabrication           & CO$_2$ laser micromachining, photolithography, EWOD
-                        platform fabrication, paper-based diagnostics \\
-Programming           & MATLAB, Python (data analysis, model fitting) \\
-Fluid Simulation      & Familiarity with LBM concepts; developing CFD skills \\
-Software              & Aspen Plus, MATLAB, Python, \LaTeX \\
-Languages             & English (Proficient — certificate held), [Other languages] \\
-\bottomrule
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}lX@{}}
+Simulation \& Modelling
+  & COMSOL Multiphysics (flow, heat transfer, porous media, electric fields);
+    Aspen Plus (thermodynamic cycle modelling, process simulation) \\[3pt]
+Numerical / Analysis Tools
+  & MATLAB, Python, OriginPro, ImageJ \\[3pt]
+Experimental Fabrication
+  & CO$_2$ laser micromachining, thermal lamination, photolithographic electrode
+    patterning on PET \\[3pt]
+Other
+  & Microsoft Office; Moodle LMS; OBE documentation; English C1 (CEFR) \\
 \end{tabularx}
+
+%--- MEMBERSHIPS & AWARDS ---
+\section{Professional Memberships \& Awards}
+\begin{itemize}
+  \item Registered Mechanical Engineer, Pakistan Engineering Council
+        (Lifetime member) -- Sep 2021.
+  \item Merit-Based Graduate Scholarship \& Assistantship (GA-1), GIK Institute
+        -- Feb 2022.
+  \item 5th place, DICE AFS-2022 Innovation Competition, MNS University of
+        Agriculture, Multan -- Oct 2022.
+\end{itemize}
 
 %--- REFERENCES ---
 \section{References}
 
-Available upon request.
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+\textbf{Dr Ali Turab Jafry}       & \textbf{Dr Taqi Ahmad Cheema} \\
+Associate Professor, FME          & Dean / Associate Professor, FME \\
+GIK Institute, Topi               & GIK Institute, Topi \\
+\href{mailto:ali.turab@giki.edu.pk}{ali.turab@giki.edu.pk}
+  & \href{mailto:tacheema@giki.edu.pk}{tacheema@giki.edu.pk} \\
+\end{tabularx}
 
-\vspace{12pt}
-
-%----------------------------------------------------------------------------------------
-% PhD APPLICATION TRACKER
-%----------------------------------------------------------------------------------------
+%========================================================================================
+% PAGE 2 — PhD APPLICATION TRACKER
+%========================================================================================
 \newpage
 
 \begin{center}
-  {\LARGE \textbf{PhD Application Tracker}}\\[4pt]
-  {\large Hamza Abbas — 2025/2026 Cycle}\\[2pt]
+  {\LARGE\bfseries\color{accent} PhD Application Tracker}\\[4pt]
+  {\large Hamza Abbas $\cdot$ 2025/2026 Cycle}\\[2pt]
   \small Updated: May 2026
 \end{center}
 
 \vspace{8pt}
-
 \small
-\renewcommand{\arraystretch}{1.6}
+\renewcommand{\arraystretch}{1.65}
 
-\begin{longtable}{@{} p{3.8cm} p{3.0cm} p{2.5cm} p{1.8cm} p{3.4cm} @{}}
+\begin{longtable}{@{} p{3.6cm} p{3.0cm} p{2.8cm} p{1.9cm} p{3.2cm} @{}}
 \toprule
-\textbf{Institution \& Lab} & \textbf{PI} & \textbf{Focus} &
-\textbf{Deadline} & \textbf{Status / Notes} \\
+\textbf{Institution \& Lab} & \textbf{PI} & \textbf{Focus / Pillar}
+  & \textbf{Deadline} & \textbf{Status / Action} \\
 \midrule
 \endhead
 
-% --- Target 1 ---
-\textbf{Queensland University of Technology (QUT)} \newline
-Brisbane, Australia \newline
-\textit{Multiphase Flow \& Porous Media Group} &
+%--- Target 1 ---
+\textbf{Queensland University of Technology (QUT)}
+\newline Brisbane, Australia
+\newline \textit{Multiphase Flow \& Porous Media Group}
+&
 Dr.\ Zhongzheng Wang \newline
-Prof.\ Emilie Sauret &
-Structural capillarity; engineered porous media; LBM; wicking &
-\textcolor{accentblue}{\textbf{31 Jul 2026}} &
-\textcolor{accentblue}{\textbf{OPEN — Advertised}} \newline
-Fully funded scholarship. \newline
-Email supervisor first; EOI follows interview. \\
+Prof.\ Emilie Sauret
+&
+Structural capillarity; engineered porous media; LBM; wicking
+\newline \textit{Pillar 2}
+&
+\textcolor{accent}{\textbf{31 Jul 2026}}
+&
+\textcolor{accent}{\textbf{OPEN}} \newline
+Fully funded. Email supervisor first; EOI after interview. \\
 
 \midrule
 
-% --- Target 2 ---
-\textbf{University of Stuttgart} \newline
-Stuttgart, Germany \newline
-\textit{SFB 1313 — Porous Media Group} &
-Dr.\ Nikolaos Karadimitriou &
-Multiphase flow; interfacial phenomena; capillary pressure; microfluidics &
-\textcolor{red}{\textbf{15 Apr 2026}} &
-\textcolor{red}{\textbf{DEADLINE PASSED}} \newline
+%--- Target 2 ---
+\textbf{University of Stuttgart}
+\newline Stuttgart, Germany
+\newline \textit{SFB 1313 -- Porous Media}
+&
+Dr.\ Nikolaos Karadimitriou
+&
+Multiphase flow; capillary pressure; interfacial phenomena
+\newline \textit{Pillar 2}
+&
+\textcolor{red}{\textbf{15 Apr 2026}}
+&
+\textcolor{red}{\textbf{PASSED}} \newline
 Monitor for next cycle. \\
 
 \midrule
 
-% --- Target 3 ---
-\textbf{University of Strathclyde} \newline
-Glasgow, UK \newline
-\textit{Dept.\ Mechanical \& Aerospace Engineering} &
-[PI — confirm on FindAPhD listing] &
-Microfluidic fabrication; diagnostic device analysis &
-\textcolor{accentblue}{\textbf{31 Jul 2026}} &
-\textcolor{accentblue}{\textbf{OPEN — Advertised}} \newline
+%--- Target 3 ---
+\textbf{University of Strathclyde}
+\newline Glasgow, UK
+\newline \textit{Mech.\ \& Aerospace Eng.}
+&
+[Confirm PI on FindAPhD listing]
+&
+Microfluidic fabrication; diagnostic flow analysis
+\newline \textit{Pillar 3}
+&
+\textcolor{accent}{\textbf{31 Jul 2026}}
+&
+\textcolor{accent}{\textbf{OPEN}} \newline
 Formal application via FindAPhD. \\
 
 \midrule
 
-% --- Target 4 ---
-\textbf{University of Toronto} \newline
-Toronto, Canada \newline
-\textit{Wheeler Microfluidics Laboratory} &
+%--- Target 4 ---
+\textbf{University of Toronto}
+\newline Toronto, Canada
+\newline \textit{Wheeler Microfluidics Lab}
+&
 Prof.\ Aaron Wheeler \newline
-\href{mailto:aaron.wheeler@utoronto.ca}{aaron.wheeler@utoronto.ca} &
-Digital microfluidics; EWOD; paper diagnostics; point-of-care &
+\href{mailto:aaron.wheeler@utoronto.ca}{\footnotesize aaron.wheeler@utoronto.ca}
+&
+Digital microfluidics; EWOD; paper diagnostics
+\newline \textit{Pillar 3}
+&
 \textcolor{orange}{\textbf{31 May 2026}} \newline
-{\tiny (BME Round 2)} &
-\textcolor{orange}{\textbf{URGENT — Round 2 closes soon}} \newline
-Cold email + formal BME application. \\
+{\tiny BME Round 2}
+&
+\textcolor{orange}{\textbf{URGENT}} \newline
+Cold email + BME application now. \\
 
 \midrule
 
-% --- Target 5 ---
-\textbf{UC Merced} \newline
-California, USA \newline
-\textit{Aghilinejad Group} &
+%--- Target 5 ---
+\textbf{UC Merced}
+\newline California, USA
+\newline \textit{Aghilinejad Group}
+&
 Prof.\ Arian Aghilinejad \newline
-\href{mailto:aaghilinejad@ucmerced.edu}{aaghilinejad@ucmerced.edu} &
-Biofluid mechanics; microfluidics; ML-assisted diagnostics &
-\textit{Fall 2027} \newline
-{\tiny (next cycle $\approx$Dec 2026)} &
-Cold email now; formal application opens $\sim$Sep 2026. \newline
+\href{mailto:aaghilinejad@ucmerced.edu}{\footnotesize aaghilinejad@ucmerced.edu}
+&
+Biofluid mechanics; microfluidics; ML diagnostics
+\newline \textit{Pillar 3}
+&
+\textit{$\sim$Dec 2026} \newline
+{\tiny Fall 2027 entry}
+&
+Cold email now. \newline
 Check openings page. \\
 
 \midrule
 
-% --- Target 6 ---
-\textbf{University of Washington} \newline
-Seattle, USA \newline
-\textit{Lutz Lab — Bioengineering} &
+%--- Target 6 ---
+\textbf{University of Washington}
+\newline Seattle, USA
+\newline \textit{Lutz Lab -- Bioengineering}
+&
 Prof.\ Barry Lutz \newline
-\href{mailto:blutz@uw.edu}{blutz@uw.edu} &
-Capillary-driven paper microfluidics; point-of-care diagnostics &
-\textit{Fall 2027} \newline
-{\tiny (next cycle 1 Dec 2026)} &
-\textcolor{red}{\textbf{Dec 2025 deadline passed.}} \newline
-Cold email now to build relationship for Dec 2026 cycle. \\
+\href{mailto:blutz@uw.edu}{blutz@uw.edu}
+&
+Capillary paper microfluidics; point-of-care diagnostics
+\newline \textit{Pillars 2 + 3}
+&
+\textit{$\sim$Dec 2026} \newline
+{\tiny Fall 2027 entry}
+&
+\textcolor{red}{Dec 2025 passed.} \newline
+Email now; apply Dec 2026. \\
 
 \midrule
 
-% --- Target 7 ---
-\textbf{UCLA} \newline
-Los Angeles, USA \newline
-\textit{Micro \& Nano Manufacturing Lab} &
-Prof.\ Chang-Jin ``CJ'' Kim &
-EWOD; digital microfluidics; droplet actuation; biomedical devices &
-\textit{Fall 2027} \newline
-{\tiny (next cycle $\approx$Dec 2026)} &
-\textcolor{red}{\textbf{Dec 2025 deadline passed.}} \newline
-Cold email now; apply Dec 2026 cycle. \\
+%--- Target 7 ---
+\textbf{UCLA}
+\newline Los Angeles, USA
+\newline \textit{Micro \& Nano Mfg.\ Lab}
+&
+Prof.\ Chang-Jin ``CJ'' Kim
+&
+EWOD; digital microfluidics; droplet actuation
+\newline \textit{Pillar 3}
+&
+\textit{$\sim$Dec 2026} \newline
+{\tiny Fall 2027 entry}
+&
+\textcolor{red}{Dec 2025 passed.} \newline
+Email now; apply Dec 2026. \\
 
 \midrule
 
-% --- Target 8 ---
-\textbf{University of Birmingham} \newline
-Birmingham, UK \newline
-\textit{Centre for Energy Systems} &
-[Identify PI via EPSRC awards — confirm on department page] &
-ORC; waste heat recovery; thermal energy systems; Aspen Plus &
-\textit{Rolling / EPSRC CDT} &
-Monitor FindAPhD \& Birmingham Energy Systems page. \newline
-Confirm international eligibility before applying. \\
+%--- Target 8 ---
+\textbf{University of Birmingham}
+\newline Birmingham, UK
+\newline \textit{Centre for Energy Systems}
+&
+[Identify via EPSRC award search]
+&
+ORC; waste heat recovery; Aspen Plus; thermal systems
+\newline \textit{Pillar 1}
+&
+Rolling / EPSRC CDT
+&
+Monitor FindAPhD. \newline
+Confirm intl.\ fee eligibility. \\
 
 \bottomrule
 \end{longtable}
 
+\vspace{6pt}
+\noindent
+\textbf{Pillar key:} \
+1 = ORC/Waste-Heat Simulation \quad
+2 = Porous Media \& Capillary Flow \quad
+3 = Microfluidics Fabrication \& Diagnostics
+
+\vspace{8pt}
+\noindent
+\textbf{Deadline key:} \
+\textcolor{accent}{$\blacksquare$}~Open \quad
+\textcolor{orange}{$\blacksquare$}~Urgent \quad
+\textcolor{red}{$\blacksquare$}~Closed/Next cycle
+
 \vspace{10pt}
-
-\noindent\textbf{Key:} \
-\textcolor{accentblue}{$\blacksquare$} Open \quad
-\textcolor{orange}{$\blacksquare$} Urgent \quad
-\textcolor{red}{$\blacksquare$} Closed / Next Cycle
-
-\vspace{12pt}
-\noindent\textit{Last updated: May 2026. Always verify deadlines directly on the institution's
-official scholarship or admissions page before applying.}
+\noindent\textit{Always verify deadlines directly on the institution's official
+scholarship or admissions page before applying. Last updated: May 2026.}
 
 \end{document}
